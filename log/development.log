@@ -1,0 +1,491 @@
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (23.5ms)[0m  select sqlite_version(*)
+  [1m[36m (17.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateProducts (20150206192828)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price_in_cents" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (30.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150206192828"]]
+  [1m[35m (3.7ms)[0m  commit transaction
+Migrating to CreateUsers (20150206212904)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150206212904"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Migrating to CreateReviews (20150209041853)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" text, "product_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150209041853"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Migrating to AddNameToUser (20150210221754)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (23.7ms)[0m  ALTER TABLE "users" ADD "name" varchar
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150210221754"]]
+  [1m[35m (13.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-02-24 16:07:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (1.9ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 4347ms (Views: 4285.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:07:59 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:07:59 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 16:07:59 -0500
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:07:59 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:07:59 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:07:59 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:07:59 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 16:07:59 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 16:07:59 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 16:07:59 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 16:07:59 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:07:59 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 16:07:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mrs. Daniela Blick"], ["description", "Use the digital JSON interface, then you can compress the online feed!"], ["price_in_cents", 8608], ["created_at", "2015-02-24 21:10:48.041528"], ["updated_at", "2015-02-24 21:10:48.041528"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Madison Spencer"], ["description", "Try to navigate the RSS panel, maybe it will synthesize the bluetooth firewall!"], ["price_in_cents", 1493], ["created_at", "2015-02-24 21:10:48.051373"], ["updated_at", "2015-02-24 21:10:48.051373"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Marcelino Stamm"], ["description", "The SSL circuit is down, quantify the back-end monitor so we can transmit the FTP system!"], ["price_in_cents", 5126], ["created_at", "2015-02-24 21:10:48.057435"], ["updated_at", "2015-02-24 21:10:48.057435"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Mr. Duncan Hamill"], ["description", "Use the back-end SAS hard drive, then you can navigate the redundant protocol!"], ["price_in_cents", 8053], ["created_at", "2015-02-24 21:10:48.063290"], ["updated_at", "2015-02-24 21:10:48.063290"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Melyssa Armstrong"], ["description", "backing up the card won't do anything, we need to generate the optical ADP bandwidth!"], ["price_in_cents", 4485], ["created_at", "2015-02-24 21:10:48.068865"], ["updated_at", "2015-02-24 21:10:48.068865"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Mr. Weston Gislason"], ["description", "If we generate the alarm, we can get to the CSS driver through the mobile AGP interface!"], ["price_in_cents", 2354], ["created_at", "2015-02-24 21:10:48.075168"], ["updated_at", "2015-02-24 21:10:48.075168"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Wilford Wiza"], ["description", "You can't synthesize the sensor without synthesizing the solid state TCP transmitter!"], ["price_in_cents", 6724], ["created_at", "2015-02-24 21:10:48.080852"], ["updated_at", "2015-02-24 21:10:48.080852"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Mr. Albert Jacobi"], ["description", "Try to copy the SDD protocol, maybe it will index the 1080p bus!"], ["price_in_cents", 5606], ["created_at", "2015-02-24 21:10:48.087477"], ["updated_at", "2015-02-24 21:10:48.087477"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Raoul Pagac"], ["description", "If we back up the bandwidth, we can get to the THX sensor through the primary SCSI hard drive!"], ["price_in_cents", 9577], ["created_at", "2015-02-24 21:10:48.093226"], ["updated_at", "2015-02-24 21:10:48.093226"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Glenda Beatty PhD"], ["description", "You can't override the bus without bypassing the haptic JBOD port!"], ["price_in_cents", 533], ["created_at", "2015-02-24 21:10:48.100185"], ["updated_at", "2015-02-24 21:10:48.100185"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Retha Aufderhar"], ["description", "Try to hack the RSS bandwidth, maybe it will input the solid state panel!"], ["price_in_cents", 4758], ["created_at", "2015-02-24 21:10:48.106915"], ["updated_at", "2015-02-24 21:10:48.106915"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Hollis O'Kon"], ["description", "If we transmit the firewall, we can get to the SQL pixel through the back-end AI firewall!"], ["price_in_cents", 1932], ["created_at", "2015-02-24 21:10:48.112869"], ["updated_at", "2015-02-24 21:10:48.112869"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Karlee Kuvalis Sr."], ["description", "The SDD array is down, back up the back-end program so we can calculate the SMS feed!"], ["price_in_cents", 2760], ["created_at", "2015-02-24 21:10:48.119406"], ["updated_at", "2015-02-24 21:10:48.119406"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Franco Zemlak"], ["description", "transmitting the monitor won't do anything, we need to bypass the auxiliary JBOD sensor!"], ["price_in_cents", 5712], ["created_at", "2015-02-24 21:10:48.125152"], ["updated_at", "2015-02-24 21:10:48.125152"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Makenna Mosciski"], ["description", "We need to back up the bluetooth THX card!"], ["price_in_cents", 6787], ["created_at", "2015-02-24 21:10:48.131051"], ["updated_at", "2015-02-24 21:10:48.131051"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Merle Bode"], ["description", "You can't quantify the firewall without navigating the online SMTP card!"], ["price_in_cents", 7533], ["created_at", "2015-02-24 21:10:48.137175"], ["updated_at", "2015-02-24 21:10:48.137175"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nick Spencer"], ["description", "The SQL firewall is down, quantify the virtual hard drive so we can copy the AGP microchip!"], ["price_in_cents", 1803], ["created_at", "2015-02-24 21:10:48.142574"], ["updated_at", "2015-02-24 21:10:48.142574"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Jabari Brekke V"], ["description", "We need to connect the solid state HTTP array!"], ["price_in_cents", 5692], ["created_at", "2015-02-24 21:10:48.149631"], ["updated_at", "2015-02-24 21:10:48.149631"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Justine Kub DVM"], ["description", "We need to hack the solid state AGP monitor!"], ["price_in_cents", 2649], ["created_at", "2015-02-24 21:10:48.155544"], ["updated_at", "2015-02-24 21:10:48.155544"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Joanne Hansen"], ["description", "You can't program the protocol without bypassing the auxiliary SAS sensor!"], ["price_in_cents", 4293], ["created_at", "2015-02-24 21:10:48.162084"], ["updated_at", "2015-02-24 21:10:48.162084"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Renee Leuschke"], ["description", "If we calculate the hard drive, we can get to the TCP port through the bluetooth GB alarm!"], ["price_in_cents", 346], ["created_at", "2015-02-24 21:10:48.168429"], ["updated_at", "2015-02-24 21:10:48.168429"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Ambrose Littel"], ["description", "The PNG application is down, quantify the back-end driver so we can copy the JBOD port!"], ["price_in_cents", 9302], ["created_at", "2015-02-24 21:10:48.174107"], ["updated_at", "2015-02-24 21:10:48.174107"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mrs. Pearl O'Keefe"], ["description", "I'll synthesize the open-source SAS application, that should sensor the PCI bandwidth!"], ["price_in_cents", 7913], ["created_at", "2015-02-24 21:10:48.179894"], ["updated_at", "2015-02-24 21:10:48.179894"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Betsy Raynor"], ["description", "If we index the interface, we can get to the SQL panel through the back-end SQL monitor!"], ["price_in_cents", 808], ["created_at", "2015-02-24 21:10:48.186095"], ["updated_at", "2015-02-24 21:10:48.186095"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kyla Mante"], ["description", "I'll generate the back-end IB pixel, that should driver the EXE pixel!"], ["price_in_cents", 2385], ["created_at", "2015-02-24 21:10:48.191730"], ["updated_at", "2015-02-24 21:10:48.191730"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Dr. Ona Sanford"], ["description", "I'll back up the mobile RAM bandwidth, that should pixel the XSS bandwidth!"], ["price_in_cents", 6920], ["created_at", "2015-02-24 21:10:48.197841"], ["updated_at", "2015-02-24 21:10:48.197841"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Stacy Schuster"], ["description", "Use the online XML pixel, then you can hack the cross-platform circuit!"], ["price_in_cents", 9547], ["created_at", "2015-02-24 21:10:48.205314"], ["updated_at", "2015-02-24 21:10:48.205314"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Kassandra Waelchi"], ["description", "If we synthesize the pixel, we can get to the AI port through the bluetooth IB capacitor!"], ["price_in_cents", 4441], ["created_at", "2015-02-24 21:10:48.211241"], ["updated_at", "2015-02-24 21:10:48.211241"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Malvina Cassin"], ["description", "The SDD sensor is down, synthesize the auxiliary microchip so we can copy the SAS interface!"], ["price_in_cents", 6312], ["created_at", "2015-02-24 21:10:48.217659"], ["updated_at", "2015-02-24 21:10:48.217659"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Palma Collins DVM"], ["description", "If we program the port, we can get to the SQL transmitter through the primary SCSI protocol!"], ["price_in_cents", 5697], ["created_at", "2015-02-24 21:10:48.225453"], ["updated_at", "2015-02-24 21:10:48.225453"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Harmony Franecki"], ["description", "We need to synthesize the neural FTP circuit!"], ["price_in_cents", 2641], ["created_at", "2015-02-24 21:10:48.233497"], ["updated_at", "2015-02-24 21:10:48.233497"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Aileen Farrell III"], ["description", "We need to calculate the online RSS alarm!"], ["price_in_cents", 3557], ["created_at", "2015-02-24 21:10:48.240072"], ["updated_at", "2015-02-24 21:10:48.240072"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Candido Bogan"], ["description", "Use the virtual ADP circuit, then you can synthesize the neural application!"], ["price_in_cents", 5999], ["created_at", "2015-02-24 21:10:48.246169"], ["updated_at", "2015-02-24 21:10:48.246169"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "D'angelo Padberg"], ["description", "Try to program the RAM program, maybe it will transmit the virtual microchip!"], ["price_in_cents", 9706], ["created_at", "2015-02-24 21:10:48.252725"], ["updated_at", "2015-02-24 21:10:48.252725"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Itzel Gorczany"], ["description", "I'll navigate the virtual SDD sensor, that should system the THX system!"], ["price_in_cents", 4019], ["created_at", "2015-02-24 21:10:48.258553"], ["updated_at", "2015-02-24 21:10:48.258553"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Elwin Ruecker"], ["description", "If we transmit the program, we can get to the SMTP system through the neural AI bandwidth!"], ["price_in_cents", 3292], ["created_at", "2015-02-24 21:10:48.265644"], ["updated_at", "2015-02-24 21:10:48.265644"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alexane Hessel"], ["description", "Use the auxiliary SMTP firewall, then you can index the neural pixel!"], ["price_in_cents", 4664], ["created_at", "2015-02-24 21:10:48.271796"], ["updated_at", "2015-02-24 21:10:48.271796"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Julia Luettgen"], ["description", "Try to parse the COM protocol, maybe it will calculate the redundant program!"], ["price_in_cents", 9847], ["created_at", "2015-02-24 21:10:48.277804"], ["updated_at", "2015-02-24 21:10:48.277804"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Camille Cole"], ["description", "Use the open-source AI pixel, then you can override the 1080p firewall!"], ["price_in_cents", 8016], ["created_at", "2015-02-24 21:10:48.284581"], ["updated_at", "2015-02-24 21:10:48.284581"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Mr. Armani Goyette"], ["description", "Use the auxiliary USB card, then you can copy the open-source transmitter!"], ["price_in_cents", 1057], ["created_at", "2015-02-24 21:10:48.290717"], ["updated_at", "2015-02-24 21:10:48.290717"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Molly Hauck V"], ["description", "I'll synthesize the mobile GB array, that should pixel the ADP monitor!"], ["price_in_cents", 4545], ["created_at", "2015-02-24 21:10:48.296494"], ["updated_at", "2015-02-24 21:10:48.296494"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Christian Nitzsche"], ["description", "Try to program the RSS bus, maybe it will bypass the primary interface!"], ["price_in_cents", 6209], ["created_at", "2015-02-24 21:10:48.303765"], ["updated_at", "2015-02-24 21:10:48.303765"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Isaiah Cruickshank"], ["description", "We need to quantify the primary EXE firewall!"], ["price_in_cents", 2744], ["created_at", "2015-02-24 21:10:48.309627"], ["updated_at", "2015-02-24 21:10:48.309627"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Julie Graham"], ["description", "I'll reboot the digital TCP pixel, that should system the JSON application!"], ["price_in_cents", 2813], ["created_at", "2015-02-24 21:10:48.314967"], ["updated_at", "2015-02-24 21:10:48.314967"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mrs. Lucienne Wintheiser"], ["description", "Try to bypass the SSL driver, maybe it will bypass the redundant port!"], ["price_in_cents", 1263], ["created_at", "2015-02-24 21:10:48.321029"], ["updated_at", "2015-02-24 21:10:48.321029"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Miss Tom Hansen"], ["description", "You can't override the microchip without quantifying the wireless PNG transmitter!"], ["price_in_cents", 7034], ["created_at", "2015-02-24 21:10:48.327295"], ["updated_at", "2015-02-24 21:10:48.327295"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Koby Crooks"], ["description", "We need to hack the multi-byte EXE port!"], ["price_in_cents", 5566], ["created_at", "2015-02-24 21:10:48.334286"], ["updated_at", "2015-02-24 21:10:48.334286"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Hank Walsh"], ["description", "I'll program the digital FTP matrix, that should port the EXE protocol!"], ["price_in_cents", 4745], ["created_at", "2015-02-24 21:10:48.340796"], ["updated_at", "2015-02-24 21:10:48.340796"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elsa Haag"], ["description", "hacking the circuit won't do anything, we need to reboot the bluetooth HDD hard drive!"], ["price_in_cents", 2070], ["created_at", "2015-02-24 21:10:48.346622"], ["updated_at", "2015-02-24 21:10:48.346622"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Shad West"], ["description", "I'll index the wireless CSS interface, that should capacitor the SQL monitor!"], ["price_in_cents", 3777], ["created_at", "2015-02-24 21:10:48.352978"], ["updated_at", "2015-02-24 21:10:48.352978"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kailee Ratke"], ["description", "We need to hack the bluetooth JSON bandwidth!"], ["price_in_cents", 5243], ["created_at", "2015-02-24 21:10:48.358974"], ["updated_at", "2015-02-24 21:10:48.358974"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Junior Gleichner"], ["description", "Try to input the COM matrix, maybe it will navigate the redundant alarm!"], ["price_in_cents", 7756], ["created_at", "2015-02-24 21:10:48.365631"], ["updated_at", "2015-02-24 21:10:48.365631"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ruthie Feest Jr."], ["description", "I'll program the auxiliary JSON card, that should circuit the RAM protocol!"], ["price_in_cents", 1568], ["created_at", "2015-02-24 21:10:48.371660"], ["updated_at", "2015-02-24 21:10:48.371660"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Paul Larson"], ["description", "The SSL panel is down, parse the 1080p panel so we can back up the AI port!"], ["price_in_cents", 3958], ["created_at", "2015-02-24 21:10:48.378335"], ["updated_at", "2015-02-24 21:10:48.378335"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mr. Jo Schamberger"], ["description", "Use the optical EXE monitor, then you can index the mobile bandwidth!"], ["price_in_cents", 7898], ["created_at", "2015-02-24 21:10:48.385301"], ["updated_at", "2015-02-24 21:10:48.385301"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Osborne Hartmann"], ["description", "generating the monitor won't do anything, we need to navigate the multi-byte COM transmitter!"], ["price_in_cents", 9937], ["created_at", "2015-02-24 21:10:48.392167"], ["updated_at", "2015-02-24 21:10:48.392167"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Floy Brakus"], ["description", "Use the optical USB capacitor, then you can synthesize the open-source bus!"], ["price_in_cents", 5510], ["created_at", "2015-02-24 21:10:48.398672"], ["updated_at", "2015-02-24 21:10:48.398672"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Mrs. Itzel Mann"], ["description", "We need to hack the mobile ADP alarm!"], ["price_in_cents", 8247], ["created_at", "2015-02-24 21:10:48.405065"], ["updated_at", "2015-02-24 21:10:48.405065"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Riley Schiller"], ["description", "If we back up the protocol, we can get to the USB microchip through the optical XSS bus!"], ["price_in_cents", 8463], ["created_at", "2015-02-24 21:10:48.410891"], ["updated_at", "2015-02-24 21:10:48.410891"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Graciela Brekke"], ["description", "We need to connect the bluetooth SMS microchip!"], ["price_in_cents", 7803], ["created_at", "2015-02-24 21:10:48.416310"], ["updated_at", "2015-02-24 21:10:48.416310"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kiara Jenkins"], ["description", "We need to override the auxiliary USB array!"], ["price_in_cents", 8660], ["created_at", "2015-02-24 21:10:48.422412"], ["updated_at", "2015-02-24 21:10:48.422412"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Estevan Hills"], ["description", "If we navigate the monitor, we can get to the HTTP array through the back-end SCSI pixel!"], ["price_in_cents", 7906], ["created_at", "2015-02-24 21:10:48.428240"], ["updated_at", "2015-02-24 21:10:48.428240"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sadye Dicki"], ["description", "You can't quantify the system without transmitting the open-source THX array!"], ["price_in_cents", 4948], ["created_at", "2015-02-24 21:10:48.434993"], ["updated_at", "2015-02-24 21:10:48.434993"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Helena McClure"], ["description", "You can't back up the transmitter without bypassing the haptic HTTP circuit!"], ["price_in_cents", 7611], ["created_at", "2015-02-24 21:10:48.441753"], ["updated_at", "2015-02-24 21:10:48.441753"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Creola Schmeler"], ["description", "The COM firewall is down, synthesize the auxiliary application so we can compress the XML feed!"], ["price_in_cents", 2331], ["created_at", "2015-02-24 21:10:48.448084"], ["updated_at", "2015-02-24 21:10:48.448084"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Pinkie Rodriguez"], ["description", "Try to generate the EXE transmitter, maybe it will program the primary bus!"], ["price_in_cents", 8784], ["created_at", "2015-02-24 21:10:48.454895"], ["updated_at", "2015-02-24 21:10:48.454895"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Trinity Jakubowski"], ["description", "You can't quantify the circuit without compressing the redundant SQL circuit!"], ["price_in_cents", 2175], ["created_at", "2015-02-24 21:10:48.461126"], ["updated_at", "2015-02-24 21:10:48.461126"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Jana Kunze"], ["description", "We need to index the 1080p XSS transmitter!"], ["price_in_cents", 5408], ["created_at", "2015-02-24 21:10:48.467258"], ["updated_at", "2015-02-24 21:10:48.467258"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jaeden Bergnaum"], ["description", "I'll parse the solid state SCSI hard drive, that should bandwidth the SSL sensor!"], ["price_in_cents", 783], ["created_at", "2015-02-24 21:10:48.473555"], ["updated_at", "2015-02-24 21:10:48.473555"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Lysanne Mueller"], ["description", "Use the solid state HTTP array, then you can navigate the primary protocol!"], ["price_in_cents", 5595], ["created_at", "2015-02-24 21:10:48.480291"], ["updated_at", "2015-02-24 21:10:48.480291"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Juwan Ward"], ["description", "I'll hack the haptic USB pixel, that should firewall the THX matrix!"], ["price_in_cents", 6608], ["created_at", "2015-02-24 21:10:48.486088"], ["updated_at", "2015-02-24 21:10:48.486088"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Jovanny Zieme"], ["description", "Use the bluetooth JSON bus, then you can program the 1080p alarm!"], ["price_in_cents", 8879], ["created_at", "2015-02-24 21:10:48.491934"], ["updated_at", "2015-02-24 21:10:48.491934"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ernestina Wiegand"], ["description", "overriding the card won't do anything, we need to program the optical PNG transmitter!"], ["price_in_cents", 8524], ["created_at", "2015-02-24 21:10:48.498286"], ["updated_at", "2015-02-24 21:10:48.498286"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Karine Bauch"], ["description", "Use the virtual HTTP firewall, then you can calculate the optical capacitor!"], ["price_in_cents", 8060], ["created_at", "2015-02-24 21:10:48.504355"], ["updated_at", "2015-02-24 21:10:48.504355"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Maurice Bednar"], ["description", "Try to bypass the XML alarm, maybe it will bypass the open-source card!"], ["price_in_cents", 8305], ["created_at", "2015-02-24 21:10:48.510839"], ["updated_at", "2015-02-24 21:10:48.510839"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Izabella Beier"], ["description", "The HTTP hard drive is down, back up the online bandwidth so we can transmit the USB system!"], ["price_in_cents", 7193], ["created_at", "2015-02-24 21:10:48.517878"], ["updated_at", "2015-02-24 21:10:48.517878"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Adolph Trantow"], ["description", "Use the redundant COM hard drive, then you can index the solid state feed!"], ["price_in_cents", 5899], ["created_at", "2015-02-24 21:10:48.524145"], ["updated_at", "2015-02-24 21:10:48.524145"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Margarete Rice"], ["description", "Try to bypass the SSL feed, maybe it will parse the back-end pixel!"], ["price_in_cents", 4420], ["created_at", "2015-02-24 21:10:48.530537"], ["updated_at", "2015-02-24 21:10:48.530537"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Shemar Stoltenberg"], ["description", "We need to program the online COM panel!"], ["price_in_cents", 9153], ["created_at", "2015-02-24 21:10:48.536630"], ["updated_at", "2015-02-24 21:10:48.536630"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Bailey Roberts"], ["description", "Use the haptic HTTP card, then you can calculate the digital firewall!"], ["price_in_cents", 82], ["created_at", "2015-02-24 21:10:48.543163"], ["updated_at", "2015-02-24 21:10:48.543163"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Zachariah Mante"], ["description", "The SMTP system is down, navigate the primary sensor so we can connect the RSS bus!"], ["price_in_cents", 690], ["created_at", "2015-02-24 21:10:48.549381"], ["updated_at", "2015-02-24 21:10:48.549381"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Ms. Marlen Johns"], ["description", "parsing the alarm won't do anything, we need to input the wireless FTP driver!"], ["price_in_cents", 4137], ["created_at", "2015-02-24 21:10:48.555641"], ["updated_at", "2015-02-24 21:10:48.555641"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jane Quitzon"], ["description", "I'll hack the mobile EXE sensor, that should panel the JBOD card!"], ["price_in_cents", 4010], ["created_at", "2015-02-24 21:10:48.562473"], ["updated_at", "2015-02-24 21:10:48.562473"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Reyna Boehm"], ["description", "Try to quantify the IB interface, maybe it will bypass the solid state interface!"], ["price_in_cents", 263], ["created_at", "2015-02-24 21:10:48.569073"], ["updated_at", "2015-02-24 21:10:48.569073"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Muhammad Dietrich"], ["description", "backing up the bandwidth won't do anything, we need to input the multi-byte USB array!"], ["price_in_cents", 8119], ["created_at", "2015-02-24 21:10:48.575292"], ["updated_at", "2015-02-24 21:10:48.575292"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Leanna Rosenbaum"], ["description", "Use the cross-platform PCI driver, then you can index the haptic hard drive!"], ["price_in_cents", 4652], ["created_at", "2015-02-24 21:10:48.582242"], ["updated_at", "2015-02-24 21:10:48.582242"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Jaylan O'Keefe"], ["description", "The CSS feed is down, synthesize the open-source bus so we can synthesize the HTTP panel!"], ["price_in_cents", 6265], ["created_at", "2015-02-24 21:10:48.589052"], ["updated_at", "2015-02-24 21:10:48.589052"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Kristoffer Pagac"], ["description", "Use the digital SSL driver, then you can transmit the multi-byte firewall!"], ["price_in_cents", 1891], ["created_at", "2015-02-24 21:10:48.595106"], ["updated_at", "2015-02-24 21:10:48.595106"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Erika Mosciski"], ["description", "Use the haptic ADP circuit, then you can bypass the mobile port!"], ["price_in_cents", 1672], ["created_at", "2015-02-24 21:10:48.601761"], ["updated_at", "2015-02-24 21:10:48.601761"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Wade Donnelly"], ["description", "The XML circuit is down, back up the open-source firewall so we can bypass the RAM alarm!"], ["price_in_cents", 5066], ["created_at", "2015-02-24 21:10:48.609537"], ["updated_at", "2015-02-24 21:10:48.609537"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Torrance Kris"], ["description", "Use the neural CSS application, then you can reboot the redundant capacitor!"], ["price_in_cents", 2649], ["created_at", "2015-02-24 21:10:48.615425"], ["updated_at", "2015-02-24 21:10:48.615425"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Gage Dach"], ["description", "The RAM bus is down, quantify the primary port so we can navigate the FTP transmitter!"], ["price_in_cents", 9360], ["created_at", "2015-02-24 21:10:48.621407"], ["updated_at", "2015-02-24 21:10:48.621407"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Presley Daniel DDS"], ["description", "indexing the matrix won't do anything, we need to quantify the solid state SQL port!"], ["price_in_cents", 7379], ["created_at", "2015-02-24 21:10:48.627933"], ["updated_at", "2015-02-24 21:10:48.627933"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Zoila McDermott"], ["description", "Use the cross-platform SSL bus, then you can program the digital sensor!"], ["price_in_cents", 9090], ["created_at", "2015-02-24 21:10:48.634629"], ["updated_at", "2015-02-24 21:10:48.634629"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Miss Terrance King"], ["description", "The SAS hard drive is down, compress the online bus so we can back up the COM hard drive!"], ["price_in_cents", 5394], ["created_at", "2015-02-24 21:10:48.640557"], ["updated_at", "2015-02-24 21:10:48.640557"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Soledad Ryan"], ["description", "We need to reboot the redundant HDD capacitor!"], ["price_in_cents", 3468], ["created_at", "2015-02-24 21:10:48.647070"], ["updated_at", "2015-02-24 21:10:48.647070"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Selmer Prohaska I"], ["description", "We need to copy the online SQL bus!"], ["price_in_cents", 7849], ["created_at", "2015-02-24 21:10:48.653492"], ["updated_at", "2015-02-24 21:10:48.653492"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Kayden Paucek III"], ["description", "I'll input the mobile SMTP feed, that should protocol the RSS sensor!"], ["price_in_cents", 4843], ["created_at", "2015-02-24 21:10:48.659305"], ["updated_at", "2015-02-24 21:10:48.659305"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rosina Quitzon"], ["description", "If we back up the circuit, we can get to the HDD driver through the primary SMS pixel!"], ["price_in_cents", 8613], ["created_at", "2015-02-24 21:10:48.665302"], ["updated_at", "2015-02-24 21:10:48.665302"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Quinn Hartmann"], ["description", "We need to quantify the multi-byte HDD bus!"], ["price_in_cents", 1744], ["created_at", "2015-02-24 21:10:48.683870"], ["updated_at", "2015-02-24 21:10:48.683870"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for ::1 at 2015-02-24 16:11:57 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 433ms (Views: 389.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:11:58 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:11:58 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:11:58 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 16:11:58 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 16:11:58 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:11:58 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 16:11:58 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:11:58 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:11:58 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 16:11:58 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 16:11:58 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:11:58 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 16:11:58 -0500
+
+
+Started GET "/" for ::1 at 2015-02-24 16:17:21 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 147ms (Views: 144.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:17:21 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:17:21 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:17:21 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 16:17:21 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 16:17:21 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:17:21 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 16:17:21 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:17:21 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:17:21 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 16:17:21 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:17:21 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 16:17:21 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 16:17:21 -0500
+
+
+Started GET "/products/new" for ::1 at 2015-02-24 16:17:23 -0500
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (586.1ms)
+  Rendered products/new.html.erb within layouts/application (614.8ms)
+Completed 200 OK in 730ms (Views: 728.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2015-02-24 16:17:29 -0500
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 187ms (Views: 185.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 16:17:31 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?  [["product_id", 1]]
+  Rendered products/show.html.erb within layouts/application (58.5ms)
+Completed 200 OK in 316ms (Views: 250.4ms | ActiveRecord: 0.7ms)
