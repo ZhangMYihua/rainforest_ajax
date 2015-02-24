@@ -1,8 +1,9 @@
 <h1>Rainforest</h1>
 <%= link_to "New Product", new_product_path %>
 
-
-<% @product.each do |product| %>
-  <p><%= link_to product.name, product %>, <%= product.description %> Price: <%= product.formatted_price %> </p>
+<%= form_tag products_path, method: :get, authentication: false, id: 'search_for' do%>
+	<%=text_field_tag :search, params[:search] %>
+	<%= submit_tag 'Search' %>
 <% end %>
 
+<%= render @product %>

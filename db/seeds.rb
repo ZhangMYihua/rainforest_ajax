@@ -8,7 +8,7 @@
 
 100.times do 
 	Product.create!(
-		name: Faker::Name.name,
+		name: Faker::Commerce.product_name,
 		description: Faker::Hacker.say_something_smart,
 		price_in_cents: rand(10000),
 		)

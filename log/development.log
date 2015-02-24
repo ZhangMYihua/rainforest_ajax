@@ -489,3 +489,1563 @@ Processing by ProductsController#show as HTML
   [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?  [["product_id", 1]]
   Rendered products/show.html.erb within layouts/application (58.5ms)
 Completed 200 OK in 316ms (Views: 250.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 16:41:09 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?  [["product_id", 1]]
+  Rendered products/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 176ms (Views: 173.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:10 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:10 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:10 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 16:41:10 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 16:41:10 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 16:41:10 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:41:10 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:41:10 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 16:41:10 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 16:41:10 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:41:10 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:10 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 16:41:10 -0500
+
+
+Started GET "/products" for ::1 at 2015-02-24 16:41:12 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 190ms (Views: 188.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 16:41:33 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?[0m  [["product_id", 1]]
+  Rendered products/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 146ms (Views: 143.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 16:41:34 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.5ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?[0m  [["product_id", 1]]
+  Rendered products/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 181ms (Views: 179.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:34 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:34 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 16:41:34 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:34 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 16:41:34 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 16:41:34 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:41:34 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:41:34 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 16:41:34 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 16:41:34 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:41:34 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:34 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 16:41:34 -0500
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 16:41:48 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?[0m  [["product_id", 1]]
+  Rendered products/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 157ms (Views: 155.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:48 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:48 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:48 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 16:41:48 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 16:41:48 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 16:41:48 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:48 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 16:41:48 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:41:48 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:41:48 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:41:48 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 16:41:48 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 16:41:49 -0500
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 16:41:55 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.6ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?[0m  [["product_id", 1]]
+  Rendered products/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 173ms (Views: 170.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:55 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 16:41:55 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 16:41:55 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 16:41:55 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:55 -0500
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:55 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:41:55 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 16:41:55 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:41:55 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:41:55 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:41:55 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 16:41:55 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 16:41:55 -0500
+
+
+Started GET "/products/1/edit" for ::1 at 2015-02-24 16:42:23 -0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered products/_form.html.erb (3.1ms)
+  Rendered products/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 168ms (Views: 167.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 16:42:28 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?  [["product_id", 1]]
+  Rendered products/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 147ms (Views: 145.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for ::1 at 2015-02-24 16:42:30 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 176ms (Views: 174.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products" for ::1 at 2015-02-24 16:49:48 -0500
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 153ms (Views: 150.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:49:48 -0500
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:49:48 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:49:48 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 16:49:48 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 16:49:48 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 16:49:48 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:49:48 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 16:49:48 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 16:49:48 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:49:48 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 16:49:48 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 16:49:48 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 16:49:48 -0500
+
+
+Started GET "/products" for ::1 at 2015-02-24 17:36:36 -0500
+
+SyntaxError (/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/controllers/products_controller.rb:5: syntax error, unexpected '[', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+			Product.where("LOWER(name) LIKE LOWER(?)", "%#{params:[:search]}%")
+			                                                       ^
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/controllers/products_controller.rb:5: unterminated string meets end of file):
+  app/controllers/products_controller.rb:5: syntax error, unexpected '[', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+  app/controllers/products_controller.rb:5: unterminated string meets end of file
+
+
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.6ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (97.9ms)
+
+
+Started GET "/products" for ::1 at 2015-02-24 17:37:14 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (1.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (27.0ms)
+  Rendered products/index.html.erb within layouts/application (59.9ms)
+Completed 200 OK in 301ms (Views: 293.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 17:37:15 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 17:37:15 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 17:37:15 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:37:15 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:37:15 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 17:37:15 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:37:15 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:37:15 -0500
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:37:15 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:37:15 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 17:37:15 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:37:15 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 17:37:15 -0500
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 17:37:18 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 9ms
+
+SyntaxError (/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:23: syntax error, unexpected ')', expecting '}'
+...you want to edit this review?");@output_buffer.safe_append='
+...                               ^
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:24: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:29: syntax error, unexpected keyword_do_block, expecting keyword_end
+...orm_for([@product, @review]) do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:34: syntax error, unexpected keyword_do_block, expecting keyword_end
+'.freeze;         @review.errors.full_messages.each do |msg| 
+                                                      ^
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:48: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:51: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:54: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:56: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/products/show.html.erb:23: syntax error, unexpected ')', expecting '}'
+  app/views/products/show.html.erb:24: syntax error, unexpected keyword_end, expecting ')'
+  app/views/products/show.html.erb:29: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/products/show.html.erb:34: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/products/show.html.erb:48: syntax error, unexpected keyword_end, expecting ')'
+  app/views/products/show.html.erb:51: syntax error, unexpected keyword_end, expecting ')'
+  app/views/products/show.html.erb:54: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/products/show.html.erb:56: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (13.2ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (44.6ms)
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 17:37:20 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 8ms
+
+SyntaxError (/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:23: syntax error, unexpected ')', expecting '}'
+...you want to edit this review?");@output_buffer.safe_append='
+...                               ^
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:24: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:29: syntax error, unexpected keyword_do_block, expecting keyword_end
+...orm_for([@product, @review]) do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:34: syntax error, unexpected keyword_do_block, expecting keyword_end
+'.freeze;         @review.errors.full_messages.each do |msg| 
+                                                      ^
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:48: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:51: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:54: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:56: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/products/show.html.erb:23: syntax error, unexpected ')', expecting '}'
+  app/views/products/show.html.erb:24: syntax error, unexpected keyword_end, expecting ')'
+  app/views/products/show.html.erb:29: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/products/show.html.erb:34: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/products/show.html.erb:48: syntax error, unexpected keyword_end, expecting ')'
+  app/views/products/show.html.erb:51: syntax error, unexpected keyword_end, expecting ')'
+  app/views/products/show.html.erb:54: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/products/show.html.erb:56: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (19.6ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (9.7ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (64.4ms)
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 17:38:44 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:54: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:56: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/products/show.html.erb:54: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/products/show.html.erb:56: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (12.4ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (46.4ms)
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 17:39:26 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 11ms
+
+SyntaxError (/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:54: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/krys/Bitmaker/w6/w6d2/rainforest_ajax/app/views/products/show.html.erb:56: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/products/show.html.erb:54: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/products/show.html.erb:56: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (16.3ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (52.7ms)
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 17:40:55 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?[0m  [["product_id", 1]]
+  Rendered products/show.html.erb within layouts/application (62.2ms)
+Completed 200 OK in 246ms (Views: 243.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:40:55 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:40:55 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:40:55 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 17:40:55 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 17:40:55 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 17:40:55 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 17:40:55 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:40:55 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:40:55 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:40:55 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 17:40:55 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 17:40:55 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:40:55 -0500
+
+
+Started GET "/sessions/new" for ::1 at 2015-02-24 17:40:59 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 219ms (Views: 218.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-02-24 17:41:02 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (52.8ms)
+Completed 200 OK in 208ms (Views: 196.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2015-02-24 17:41:12 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jgKAVZ3qyHegfgfixhU8ZRCyrOwSYVdUgg25PRlP/OtFaLqwCXWtMrr+PeWphAcX+PuRVcyddWhS05kn7bFQQA==", "user"=>{"name"=>"michael", "email"=>"mka@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("email", "password_digest", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "mka@gmail.com"], ["password_digest", "$2a$10$n52INQ7PFh6AbpWmvmtKiOhVtjtQPro5NAGh6hI06yyonJZsQcAai"], ["name", "michael"], ["created_at", "2015-02-24 22:41:12.367520"], ["updated_at", "2015-02-24 22:41:12.367520"]]
+  [1m[35m (40.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/products
+Completed 302 Found in 166ms (ActiveRecord: 41.2ms)
+
+
+Started GET "/products" for ::1 at 2015-02-24 17:41:12 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (18.4ms)
+  Rendered products/index.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 210ms (Views: 188.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:41:12 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 17:41:12 -0500
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:41:12 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 17:41:12 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:41:12 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:41:12 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 17:41:12 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:41:12 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:41:13 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 17:41:13 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 17:41:13 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 17:41:13 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:41:13 -0500
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 17:41:15 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.1ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?[0m  [["product_id", 1]]
+  Rendered products/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 139ms (Views: 137.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2015-02-24 17:41:20 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 147ms (Views: 146.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2015-02-24 17:41:24 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zhy2/x9ehzMCqNTglP+F9YKY8jYR/jAqsogzXcdSVnutdowai8Hidhgo7uf7br6HatHPj88CEhZiVhNHM6z60A==", "email"=>"mka@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "mka@gmail.com"]]
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 255ms (Views: 156.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:41:25 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:41:25 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 17:41:25 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:41:25 -0500
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:41:25 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 17:41:25 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 17:41:25 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 17:41:25 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:41:25 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:41:25 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:41:25 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 17:41:25 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 17:41:25 -0500
+
+
+Started POST "/sessions" for ::1 at 2015-02-24 17:41:28 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tee5dWuyLKTeXL66lpa2+Sy4Vne9VDCGDjpcBdxOs6Z+jYOQ/y1J4cTchL35B42LxPFrzmOoErre5HwfKLAfDQ==", "email"=>"mka@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "mka@gmail.com"]]
+Redirected to http://localhost:3000/products
+Completed 302 Found in 91ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for ::1 at 2015-02-24 17:41:29 -0500
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/_product.html.erb (15.5ms)
+  Rendered products/index.html.erb within layouts/application (21.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 172ms (Views: 170.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:41:29 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:41:29 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:41:29 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 17:41:29 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 17:41:29 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 17:41:29 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:41:29 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:41:29 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:41:29 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 17:41:29 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:41:29 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 17:41:29 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 17:41:29 -0500
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 17:41:31 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?  [["product_id", 1]]
+  Rendered products/show.html.erb within layouts/application (136.9ms)
+Completed 200 OK in 348ms (Views: 273.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 17:43:37 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?[0m  [["product_id", 1]]
+  Rendered products/show.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 170ms (Views: 166.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:43:38 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:43:38 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:43:38 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:43:38 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 17:43:38 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 17:43:38 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:43:38 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:43:38 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:43:38 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 17:43:38 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 17:43:38 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 17:43:38 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 17:43:38 -0500
+
+
+Started POST "/products/1/reviews" for ::1 at 2015-02-24 17:43:41 -0500
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j21RO5H//Euiy3xb0jBaWHnIzgx7Zst7u3WA6PLVHlFEB2veBWCZDrhLRly9oWEqkYHztaWa6Udrq6DyBiuy+g==", "review"=>{"comment"=>"fuck you"}, "commit"=>"Create Review", "product_id"=>"1"}
+  [1m[35mProduct Load (15.5ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "reviews" ("comment", "product_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["comment", "fuck you"], ["product_id", 1], ["user_id", 1], ["created_at", "2015-02-24 22:43:41.998486"], ["updated_at", "2015-02-24 22:43:41.998486"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/products
+Completed 302 Found in 27ms (ActiveRecord: 19.3ms)
+
+
+Started GET "/products" for ::1 at 2015-02-24 17:43:42 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (19.1ms)
+  Rendered products/index.html.erb within layouts/application (26.3ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 166ms (Views: 163.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:43:42 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:43:42 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:43:42 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:43:42 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 17:43:42 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 17:43:42 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 17:43:42 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 17:43:42 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:43:42 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 17:43:42 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:43:42 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:43:42 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 17:43:42 -0500
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 17:43:44 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?[0m  [["product_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (32.1ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined method `edit_product_review_path' for #<#<Class:0x007f9d9cc501c0>:0x007f9d9ec09d68>):
+    20:     </p>
+    21:       <% if review.user_id == session[:user_id] %>
+    22:       <%= link_to "Delete", product_review_path(@product, review), method: :delete, data: {confirm: "Are you sure you want to delete this review"} %>
+    23:       <%= link_to "Edit", edit_product_review_path(@product, review), data: {confirm: "Are you sure you want to edit this review?"} %>
+    24:     <% end %>
+    25:   <% end %>
+    26: 
+  app/views/products/show.html.erb:23:in `block in _app_views_products_show_html_erb__3533804630058617712_70157474943840'
+  app/views/products/show.html.erb:12:in `_app_views_products_show_html_erb__3533804630058617712_70157474943840'
+
+
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (14.5ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (3.2ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (99.5ms)
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 17:43:45 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?[0m  [["product_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (42.0ms)
+Completed 500 Internal Server Error in 50ms
+
+ActionView::Template::Error (undefined method `edit_product_review_path' for #<#<Class:0x007f9d9cc501c0>:0x007f9d9a50eda0>):
+    20:     </p>
+    21:       <% if review.user_id == session[:user_id] %>
+    22:       <%= link_to "Delete", product_review_path(@product, review), method: :delete, data: {confirm: "Are you sure you want to delete this review"} %>
+    23:       <%= link_to "Edit", edit_product_review_path(@product, review), data: {confirm: "Are you sure you want to edit this review?"} %>
+    24:     <% end %>
+    25:   <% end %>
+    26: 
+  app/views/products/show.html.erb:23:in `block in _app_views_products_show_html_erb__3533804630058617712_70157492163520'
+  app/views/products/show.html.erb:12:in `_app_views_products_show_html_erb__3533804630058617712_70157492163520'
+
+
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (12.6ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (44.8ms)
+
+
+Started DELETE "/sessions/current" for ::1 at 2015-02-24 17:46:13 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"U8nHaJx7Rjo1DSBfcgZuas0zV9Rqp4rUrQHne4brDSWYo/2NCOQjfy+NGlgdl1UYJXpqbbRbqOh938dhchWhjg==", "id"=>"current"}
+Redirected to http://localhost:3000/products
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2015-02-24 17:46:13 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (1.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (16.9ms)
+  Rendered products/index.html.erb within layouts/application (49.6ms)
+Completed 200 OK in 227ms (Views: 217.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 17:46:13 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 17:46:13 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:46:13 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 17:46:13 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:46:13 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:46:13 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:46:13 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 17:46:13 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:46:13 -0500
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:46:13 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:46:13 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 17:46:14 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 17:46:14 -0500
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (26.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateProducts (20150206192828)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price_in_cents" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150206192828"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Migrating to CreateUsers (20150206212904)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150206212904"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Migrating to CreateReviews (20150209041853)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" text, "product_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150209041853"]]
+  [1m[35m (4.7ms)[0m  commit transaction
+Migrating to AddNameToUser (20150210221754)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ADD "name" varchar
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150210221754"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rustic Concrete Gloves"], ["description", "Use the cross-platform SAS driver, then you can calculate the auxiliary feed!"], ["price_in_cents", 583], ["created_at", "2015-02-24 22:47:24.823442"], ["updated_at", "2015-02-24 22:47:24.823442"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Intelligent Steel Table"], ["description", "We need to index the digital SAS sensor!"], ["price_in_cents", 2585], ["created_at", "2015-02-24 22:47:24.832862"], ["updated_at", "2015-02-24 22:47:24.832862"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Gorgeous Wooden Pants"], ["description", "Use the 1080p XSS capacitor, then you can reboot the online capacitor!"], ["price_in_cents", 8608], ["created_at", "2015-02-24 22:47:24.839353"], ["updated_at", "2015-02-24 22:47:24.839353"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Intelligent Granite Hat"], ["description", "The JBOD panel is down, bypass the haptic driver so we can quantify the JSON transmitter!"], ["price_in_cents", 9527], ["created_at", "2015-02-24 22:47:24.845092"], ["updated_at", "2015-02-24 22:47:24.845092"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sleek Cotton Computer"], ["description", "We need to override the neural TCP transmitter!"], ["price_in_cents", 2788], ["created_at", "2015-02-24 22:47:24.850565"], ["updated_at", "2015-02-24 22:47:24.850565"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rustic Plastic Shoes"], ["description", "I'll transmit the optical IB bus, that should hard drive the USB capacitor!"], ["price_in_cents", 3084], ["created_at", "2015-02-24 22:47:24.856507"], ["updated_at", "2015-02-24 22:47:24.856507"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Awesome Plastic Shoes"], ["description", "You can't override the panel without generating the redundant CSS firewall!"], ["price_in_cents", 2331], ["created_at", "2015-02-24 22:47:24.862161"], ["updated_at", "2015-02-24 22:47:24.862161"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rustic Plastic Shirt"], ["description", "synthesizing the monitor won't do anything, we need to back up the open-source SCSI transmitter!"], ["price_in_cents", 2174], ["created_at", "2015-02-24 22:47:24.868189"], ["updated_at", "2015-02-24 22:47:24.868189"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rustic Steel Car"], ["description", "I'll synthesize the back-end XML hard drive, that should driver the PCI card!"], ["price_in_cents", 5492], ["created_at", "2015-02-24 22:47:24.873831"], ["updated_at", "2015-02-24 22:47:24.873831"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Awesome Concrete Table"], ["description", "The SMS sensor is down, quantify the bluetooth alarm so we can transmit the CSS transmitter!"], ["price_in_cents", 6659], ["created_at", "2015-02-24 22:47:24.879895"], ["updated_at", "2015-02-24 22:47:24.879895"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ergonomic Plastic Car"], ["description", "We need to transmit the haptic SCSI firewall!"], ["price_in_cents", 749], ["created_at", "2015-02-24 22:47:24.887111"], ["updated_at", "2015-02-24 22:47:24.887111"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Fantastic Granite Shoes"], ["description", "If we transmit the system, we can get to the THX sensor through the primary RSS sensor!"], ["price_in_cents", 1020], ["created_at", "2015-02-24 22:47:24.893365"], ["updated_at", "2015-02-24 22:47:24.893365"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Practical Plastic Shoes"], ["description", "Use the haptic USB driver, then you can parse the haptic bandwidth!"], ["price_in_cents", 4813], ["created_at", "2015-02-24 22:47:24.898971"], ["updated_at", "2015-02-24 22:47:24.898971"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Practical Rubber Chair"], ["description", "The GB port is down, override the optical bandwidth so we can back up the SQL protocol!"], ["price_in_cents", 6780], ["created_at", "2015-02-24 22:47:24.905642"], ["updated_at", "2015-02-24 22:47:24.905642"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rustic Rubber Car"], ["description", "The THX pixel is down, hack the auxiliary hard drive so we can calculate the JSON alarm!"], ["price_in_cents", 3307], ["created_at", "2015-02-24 22:47:24.911545"], ["updated_at", "2015-02-24 22:47:24.911545"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Gorgeous Steel Hat"], ["description", "If we input the panel, we can get to the RAM bandwidth through the redundant COM transmitter!"], ["price_in_cents", 931], ["created_at", "2015-02-24 22:47:24.917278"], ["updated_at", "2015-02-24 22:47:24.917278"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rustic Concrete Chair"], ["description", "I'll quantify the bluetooth SCSI sensor, that should monitor the XML transmitter!"], ["price_in_cents", 9682], ["created_at", "2015-02-24 22:47:24.923094"], ["updated_at", "2015-02-24 22:47:24.923094"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Intelligent Rubber Car"], ["description", "I'll calculate the virtual RSS card, that should transmitter the PCI protocol!"], ["price_in_cents", 2498], ["created_at", "2015-02-24 22:47:24.928398"], ["updated_at", "2015-02-24 22:47:24.928398"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Incredible Wooden Gloves"], ["description", "You can't synthesize the monitor without indexing the multi-byte GB bus!"], ["price_in_cents", 9725], ["created_at", "2015-02-24 22:47:24.934373"], ["updated_at", "2015-02-24 22:47:24.934373"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Fantastic Concrete Hat"], ["description", "The HDD hard drive is down, parse the mobile transmitter so we can calculate the SMS card!"], ["price_in_cents", 2838], ["created_at", "2015-02-24 22:47:24.941556"], ["updated_at", "2015-02-24 22:47:24.941556"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rustic Wooden Car"], ["description", "Try to reboot the XSS panel, maybe it will navigate the auxiliary interface!"], ["price_in_cents", 9606], ["created_at", "2015-02-24 22:47:24.947998"], ["updated_at", "2015-02-24 22:47:24.947998"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Gorgeous Wooden Gloves"], ["description", "The AI feed is down, hack the solid state system so we can parse the RAM array!"], ["price_in_cents", 5956], ["created_at", "2015-02-24 22:47:24.954397"], ["updated_at", "2015-02-24 22:47:24.954397"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rustic Granite Hat"], ["description", "Use the neural EXE driver, then you can compress the virtual matrix!"], ["price_in_cents", 770], ["created_at", "2015-02-24 22:47:24.960885"], ["updated_at", "2015-02-24 22:47:24.960885"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rustic Granite Shirt"], ["description", "Use the neural AGP array, then you can copy the 1080p firewall!"], ["price_in_cents", 6242], ["created_at", "2015-02-24 22:47:24.966631"], ["updated_at", "2015-02-24 22:47:24.966631"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Intelligent Concrete Shoes"], ["description", "If we synthesize the feed, we can get to the JSON sensor through the solid state SCSI interface!"], ["price_in_cents", 906], ["created_at", "2015-02-24 22:47:24.973311"], ["updated_at", "2015-02-24 22:47:24.973311"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Intelligent Cotton Pants"], ["description", "I'll reboot the 1080p SSL pixel, that should driver the SSL panel!"], ["price_in_cents", 638], ["created_at", "2015-02-24 22:47:24.979678"], ["updated_at", "2015-02-24 22:47:24.979678"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Intelligent Plastic Table"], ["description", "We need to connect the optical HTTP feed!"], ["price_in_cents", 6897], ["created_at", "2015-02-24 22:47:24.986172"], ["updated_at", "2015-02-24 22:47:24.986172"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Ergonomic Rubber Table"], ["description", "bypassing the array won't do anything, we need to compress the optical HTTP bus!"], ["price_in_cents", 2300], ["created_at", "2015-02-24 22:47:24.992422"], ["updated_at", "2015-02-24 22:47:24.992422"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Gorgeous Rubber Computer"], ["description", "You can't generate the monitor without synthesizing the open-source COM panel!"], ["price_in_cents", 9699], ["created_at", "2015-02-24 22:47:24.998967"], ["updated_at", "2015-02-24 22:47:24.998967"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Sleek Steel Chair"], ["description", "Use the solid state AGP alarm, then you can parse the haptic firewall!"], ["price_in_cents", 8098], ["created_at", "2015-02-24 22:47:25.005088"], ["updated_at", "2015-02-24 22:47:25.005088"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Incredible Wooden Pants"], ["description", "I'll connect the mobile SSL pixel, that should program the XSS matrix!"], ["price_in_cents", 1583], ["created_at", "2015-02-24 22:47:25.011670"], ["updated_at", "2015-02-24 22:47:25.011670"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rustic Rubber Table"], ["description", "Use the bluetooth SQL firewall, then you can generate the digital panel!"], ["price_in_cents", 124], ["created_at", "2015-02-24 22:47:25.018172"], ["updated_at", "2015-02-24 22:47:25.018172"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Incredible Wooden Pants"], ["description", "transmitting the panel won't do anything, we need to copy the cross-platform ADP bus!"], ["price_in_cents", 6293], ["created_at", "2015-02-24 22:47:25.024402"], ["updated_at", "2015-02-24 22:47:25.024402"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Fantastic Wooden Gloves"], ["description", "You can't copy the matrix without synthesizing the multi-byte SAS pixel!"], ["price_in_cents", 6062], ["created_at", "2015-02-24 22:47:25.030857"], ["updated_at", "2015-02-24 22:47:25.030857"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sleek Plastic Chair"], ["description", "The ADP microchip is down, back up the haptic system so we can bypass the THX capacitor!"], ["price_in_cents", 3462], ["created_at", "2015-02-24 22:47:25.037824"], ["updated_at", "2015-02-24 22:47:25.037824"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Incredible Steel Hat"], ["description", "I'll copy the digital CSS monitor, that should firewall the HTTP application!"], ["price_in_cents", 2760], ["created_at", "2015-02-24 22:47:25.044197"], ["updated_at", "2015-02-24 22:47:25.044197"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Practical Rubber Gloves"], ["description", "We need to navigate the optical CSS array!"], ["price_in_cents", 5962], ["created_at", "2015-02-24 22:47:25.051645"], ["updated_at", "2015-02-24 22:47:25.051645"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Incredible Rubber Shoes"], ["description", "quantifying the sensor won't do anything, we need to generate the bluetooth RSS application!"], ["price_in_cents", 2124], ["created_at", "2015-02-24 22:47:25.057988"], ["updated_at", "2015-02-24 22:47:25.057988"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fantastic Steel Shoes"], ["description", "I'll reboot the auxiliary ADP pixel, that should application the ADP system!"], ["price_in_cents", 9048], ["created_at", "2015-02-24 22:47:25.064089"], ["updated_at", "2015-02-24 22:47:25.064089"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Awesome Concrete Hat"], ["description", "The JSON interface is down, copy the auxiliary feed so we can input the AGP pixel!"], ["price_in_cents", 5605], ["created_at", "2015-02-24 22:47:25.070518"], ["updated_at", "2015-02-24 22:47:25.070518"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ergonomic Steel Shoes"], ["description", "If we quantify the hard drive, we can get to the RSS bandwidth through the redundant XSS array!"], ["price_in_cents", 3519], ["created_at", "2015-02-24 22:47:25.077011"], ["updated_at", "2015-02-24 22:47:25.077011"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Awesome Cotton Shoes"], ["description", "If we bypass the card, we can get to the SSL system through the redundant COM circuit!"], ["price_in_cents", 5230], ["created_at", "2015-02-24 22:47:25.083696"], ["updated_at", "2015-02-24 22:47:25.083696"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Awesome Plastic Car"], ["description", "We need to input the primary ADP port!"], ["price_in_cents", 2482], ["created_at", "2015-02-24 22:47:25.090628"], ["updated_at", "2015-02-24 22:47:25.090628"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Awesome Granite Shoes"], ["description", "The JSON transmitter is down, compress the wireless microchip so we can reboot the RAM bandwidth!"], ["price_in_cents", 9208], ["created_at", "2015-02-24 22:47:25.097190"], ["updated_at", "2015-02-24 22:47:25.097190"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Incredible Wooden Gloves"], ["description", "Try to calculate the CSS card, maybe it will index the mobile circuit!"], ["price_in_cents", 4128], ["created_at", "2015-02-24 22:47:25.103821"], ["updated_at", "2015-02-24 22:47:25.103821"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Gorgeous Cotton Shirt"], ["description", "I'll generate the auxiliary JSON capacitor, that should panel the USB application!"], ["price_in_cents", 7722], ["created_at", "2015-02-24 22:47:25.109883"], ["updated_at", "2015-02-24 22:47:25.109883"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Awesome Concrete Shirt"], ["description", "The PCI firewall is down, copy the haptic protocol so we can back up the HDD firewall!"], ["price_in_cents", 9190], ["created_at", "2015-02-24 22:47:25.116081"], ["updated_at", "2015-02-24 22:47:25.116081"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Intelligent Wooden Pants"], ["description", "I'll generate the digital PCI matrix, that should microchip the THX driver!"], ["price_in_cents", 3448], ["created_at", "2015-02-24 22:47:25.122336"], ["updated_at", "2015-02-24 22:47:25.122336"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Small Wooden Shirt"], ["description", "You can't calculate the bandwidth without overriding the multi-byte FTP hard drive!"], ["price_in_cents", 8620], ["created_at", "2015-02-24 22:47:25.128896"], ["updated_at", "2015-02-24 22:47:25.128896"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Ergonomic Wooden Car"], ["description", "We need to input the online SQL array!"], ["price_in_cents", 7560], ["created_at", "2015-02-24 22:47:25.137172"], ["updated_at", "2015-02-24 22:47:25.137172"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Intelligent Rubber Gloves"], ["description", "The EXE alarm is down, back up the haptic firewall so we can program the EXE program!"], ["price_in_cents", 6573], ["created_at", "2015-02-24 22:47:25.143486"], ["updated_at", "2015-02-24 22:47:25.143486"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Small Wooden Hat"], ["description", "Use the back-end SMS pixel, then you can bypass the multi-byte firewall!"], ["price_in_cents", 1864], ["created_at", "2015-02-24 22:47:25.149712"], ["updated_at", "2015-02-24 22:47:25.149712"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Small Steel Computer"], ["description", "The IB protocol is down, transmit the mobile pixel so we can override the SMS monitor!"], ["price_in_cents", 6681], ["created_at", "2015-02-24 22:47:25.156734"], ["updated_at", "2015-02-24 22:47:25.156734"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Practical Concrete Pants"], ["description", "We need to override the 1080p GB microchip!"], ["price_in_cents", 773], ["created_at", "2015-02-24 22:47:25.164304"], ["updated_at", "2015-02-24 22:47:25.164304"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rustic Wooden Computer"], ["description", "If we connect the program, we can get to the COM protocol through the back-end FTP driver!"], ["price_in_cents", 9446], ["created_at", "2015-02-24 22:47:25.171694"], ["updated_at", "2015-02-24 22:47:25.171694"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Incredible Steel Gloves"], ["description", "We need to compress the wireless SSL firewall!"], ["price_in_cents", 7457], ["created_at", "2015-02-24 22:47:25.177651"], ["updated_at", "2015-02-24 22:47:25.177651"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Small Wooden Chair"], ["description", "I'll reboot the virtual AGP hard drive, that should hard drive the HDD interface!"], ["price_in_cents", 2131], ["created_at", "2015-02-24 22:47:25.183556"], ["updated_at", "2015-02-24 22:47:25.183556"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Sleek Rubber Computer"], ["description", "We need to quantify the online IB microchip!"], ["price_in_cents", 8278], ["created_at", "2015-02-24 22:47:25.190059"], ["updated_at", "2015-02-24 22:47:25.190059"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fantastic Wooden Computer"], ["description", "quantifying the monitor won't do anything, we need to connect the digital SAS matrix!"], ["price_in_cents", 6062], ["created_at", "2015-02-24 22:47:25.196003"], ["updated_at", "2015-02-24 22:47:25.196003"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Awesome Steel Chair"], ["description", "Use the open-source XML microchip, then you can navigate the bluetooth sensor!"], ["price_in_cents", 4767], ["created_at", "2015-02-24 22:47:25.201734"], ["updated_at", "2015-02-24 22:47:25.201734"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Small Granite Shirt"], ["description", "The AI hard drive is down, bypass the mobile transmitter so we can bypass the USB driver!"], ["price_in_cents", 3304], ["created_at", "2015-02-24 22:47:25.207986"], ["updated_at", "2015-02-24 22:47:25.207986"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rustic Steel Pants"], ["description", "I'll bypass the redundant JBOD system, that should hard drive the GB matrix!"], ["price_in_cents", 559], ["created_at", "2015-02-24 22:47:25.214478"], ["updated_at", "2015-02-24 22:47:25.214478"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Incredible Concrete Shirt"], ["description", "synthesizing the firewall won't do anything, we need to override the bluetooth RSS port!"], ["price_in_cents", 2465], ["created_at", "2015-02-24 22:47:25.220437"], ["updated_at", "2015-02-24 22:47:25.220437"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Small Concrete Car"], ["description", "backing up the array won't do anything, we need to synthesize the bluetooth SQL protocol!"], ["price_in_cents", 9012], ["created_at", "2015-02-24 22:47:25.227139"], ["updated_at", "2015-02-24 22:47:25.227139"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ergonomic Steel Chair"], ["description", "If we navigate the monitor, we can get to the SMS capacitor through the haptic THX bus!"], ["price_in_cents", 5267], ["created_at", "2015-02-24 22:47:25.233876"], ["updated_at", "2015-02-24 22:47:25.233876"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Practical Wooden Hat"], ["description", "I'll navigate the virtual SSL hard drive, that should port the ADP protocol!"], ["price_in_cents", 3364], ["created_at", "2015-02-24 22:47:25.241085"], ["updated_at", "2015-02-24 22:47:25.241085"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Incredible Wooden Shirt"], ["description", "We need to quantify the optical FTP application!"], ["price_in_cents", 6849], ["created_at", "2015-02-24 22:47:25.248809"], ["updated_at", "2015-02-24 22:47:25.248809"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Small Plastic Chair"], ["description", "If we copy the application, we can get to the SSL program through the virtual PCI port!"], ["price_in_cents", 2526], ["created_at", "2015-02-24 22:47:25.255786"], ["updated_at", "2015-02-24 22:47:25.255786"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Small Steel Hat"], ["description", "The SMTP program is down, quantify the haptic pixel so we can copy the ADP matrix!"], ["price_in_cents", 614], ["created_at", "2015-02-24 22:47:25.263154"], ["updated_at", "2015-02-24 22:47:25.263154"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Intelligent Concrete Pants"], ["description", "I'll compress the 1080p XML matrix, that should monitor the COM firewall!"], ["price_in_cents", 9801], ["created_at", "2015-02-24 22:47:25.269739"], ["updated_at", "2015-02-24 22:47:25.269739"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Incredible Steel Computer"], ["description", "I'll calculate the mobile PCI alarm, that should pixel the HTTP panel!"], ["price_in_cents", 1374], ["created_at", "2015-02-24 22:47:25.275907"], ["updated_at", "2015-02-24 22:47:25.275907"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Ergonomic Wooden Shirt"], ["description", "You can't program the transmitter without copying the digital SDD hard drive!"], ["price_in_cents", 5320], ["created_at", "2015-02-24 22:47:25.282607"], ["updated_at", "2015-02-24 22:47:25.282607"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ergonomic Concrete Shoes"], ["description", "Try to override the ADP card, maybe it will program the neural matrix!"], ["price_in_cents", 3370], ["created_at", "2015-02-24 22:47:25.288500"], ["updated_at", "2015-02-24 22:47:25.288500"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Awesome Cotton Shirt"], ["description", "copying the application won't do anything, we need to parse the auxiliary HDD card!"], ["price_in_cents", 4852], ["created_at", "2015-02-24 22:47:25.294299"], ["updated_at", "2015-02-24 22:47:25.294299"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fantastic Plastic Shirt"], ["description", "You can't calculate the feed without backing up the auxiliary COM feed!"], ["price_in_cents", 7267], ["created_at", "2015-02-24 22:47:25.300661"], ["updated_at", "2015-02-24 22:47:25.300661"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Incredible Cotton Hat"], ["description", "We need to generate the haptic RSS panel!"], ["price_in_cents", 3018], ["created_at", "2015-02-24 22:47:25.307049"], ["updated_at", "2015-02-24 22:47:25.307049"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Practical Rubber Chair"], ["description", "The USB bus is down, transmit the virtual firewall so we can bypass the AGP interface!"], ["price_in_cents", 8697], ["created_at", "2015-02-24 22:47:25.313011"], ["updated_at", "2015-02-24 22:47:25.313011"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Practical Granite Table"], ["description", "We need to copy the multi-byte SQL pixel!"], ["price_in_cents", 5547], ["created_at", "2015-02-24 22:47:25.318933"], ["updated_at", "2015-02-24 22:47:25.318933"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Incredible Rubber Pants"], ["description", "Try to back up the SMTP pixel, maybe it will compress the wireless firewall!"], ["price_in_cents", 3950], ["created_at", "2015-02-24 22:47:25.325337"], ["updated_at", "2015-02-24 22:47:25.325337"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Small Granite Chair"], ["description", "The JSON pixel is down, index the cross-platform capacitor so we can compress the SDD pixel!"], ["price_in_cents", 5421], ["created_at", "2015-02-24 22:47:25.331684"], ["updated_at", "2015-02-24 22:47:25.331684"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rustic Steel Table"], ["description", "If we index the driver, we can get to the AGP bandwidth through the redundant XML sensor!"], ["price_in_cents", 1802], ["created_at", "2015-02-24 22:47:25.337883"], ["updated_at", "2015-02-24 22:47:25.337883"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Incredible Plastic Car"], ["description", "If we connect the transmitter, we can get to the HTTP panel through the multi-byte XML bus!"], ["price_in_cents", 1875], ["created_at", "2015-02-24 22:47:25.344000"], ["updated_at", "2015-02-24 22:47:25.344000"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Intelligent Rubber Table"], ["description", "I'll hack the wireless FTP capacitor, that should sensor the SQL application!"], ["price_in_cents", 4539], ["created_at", "2015-02-24 22:47:25.350056"], ["updated_at", "2015-02-24 22:47:25.350056"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rustic Cotton Chair"], ["description", "I'll generate the back-end AI hard drive, that should application the JSON system!"], ["price_in_cents", 2371], ["created_at", "2015-02-24 22:47:25.356738"], ["updated_at", "2015-02-24 22:47:25.356738"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Intelligent Wooden Computer"], ["description", "Try to quantify the THX interface, maybe it will generate the neural system!"], ["price_in_cents", 2879], ["created_at", "2015-02-24 22:47:25.362816"], ["updated_at", "2015-02-24 22:47:25.362816"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rustic Cotton Computer"], ["description", "Try to generate the HDD firewall, maybe it will quantify the 1080p array!"], ["price_in_cents", 7188], ["created_at", "2015-02-24 22:47:25.369962"], ["updated_at", "2015-02-24 22:47:25.369962"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Small Cotton Table"], ["description", "You can't copy the bandwidth without synthesizing the mobile EXE microchip!"], ["price_in_cents", 4579], ["created_at", "2015-02-24 22:47:25.375643"], ["updated_at", "2015-02-24 22:47:25.375643"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Intelligent Steel Pants"], ["description", "Use the digital RAM protocol, then you can index the bluetooth driver!"], ["price_in_cents", 1502], ["created_at", "2015-02-24 22:47:25.382421"], ["updated_at", "2015-02-24 22:47:25.382421"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Small Cotton Shoes"], ["description", "Use the digital CSS card, then you can reboot the back-end capacitor!"], ["price_in_cents", 4699], ["created_at", "2015-02-24 22:47:25.388572"], ["updated_at", "2015-02-24 22:47:25.388572"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Practical Steel Table"], ["description", "compressing the panel won't do anything, we need to navigate the wireless THX bandwidth!"], ["price_in_cents", 7626], ["created_at", "2015-02-24 22:47:25.394338"], ["updated_at", "2015-02-24 22:47:25.394338"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fantastic Steel Shoes"], ["description", "Use the 1080p IB firewall, then you can program the primary circuit!"], ["price_in_cents", 9614], ["created_at", "2015-02-24 22:47:25.400421"], ["updated_at", "2015-02-24 22:47:25.400421"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Awesome Wooden Pants"], ["description", "hacking the protocol won't do anything, we need to program the back-end RSS application!"], ["price_in_cents", 6260], ["created_at", "2015-02-24 22:47:25.406937"], ["updated_at", "2015-02-24 22:47:25.406937"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ergonomic Cotton Shirt"], ["description", "You can't parse the bandwidth without parsing the open-source SMS pixel!"], ["price_in_cents", 89], ["created_at", "2015-02-24 22:47:25.413293"], ["updated_at", "2015-02-24 22:47:25.413293"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Intelligent Steel Hat"], ["description", "The AI protocol is down, generate the wireless bus so we can synthesize the RSS capacitor!"], ["price_in_cents", 4766], ["created_at", "2015-02-24 22:47:25.419603"], ["updated_at", "2015-02-24 22:47:25.419603"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Practical Concrete Gloves"], ["description", "Try to reboot the SMS protocol, maybe it will quantify the virtual capacitor!"], ["price_in_cents", 8908], ["created_at", "2015-02-24 22:47:25.426149"], ["updated_at", "2015-02-24 22:47:25.426149"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Fantastic Rubber Pants"], ["description", "I'll reboot the mobile FTP capacitor, that should firewall the JSON alarm!"], ["price_in_cents", 7135], ["created_at", "2015-02-24 22:47:25.432504"], ["updated_at", "2015-02-24 22:47:25.432504"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ergonomic Cotton Pants"], ["description", "I'll connect the 1080p TCP system, that should system the SCSI matrix!"], ["price_in_cents", 2209], ["created_at", "2015-02-24 22:47:25.439989"], ["updated_at", "2015-02-24 22:47:25.439989"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Practical Concrete Pants"], ["description", "quantifying the protocol won't do anything, we need to index the neural HTTP pixel!"], ["price_in_cents", 5514], ["created_at", "2015-02-24 22:47:25.447287"], ["updated_at", "2015-02-24 22:47:25.447287"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Small Concrete Table"], ["description", "I'll reboot the open-source HDD sensor, that should array the CSS array!"], ["price_in_cents", 8607], ["created_at", "2015-02-24 22:47:25.453079"], ["updated_at", "2015-02-24 22:47:25.453079"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rustic Cotton Chair"], ["description", "We need to synthesize the cross-platform COM matrix!"], ["price_in_cents", 9902], ["created_at", "2015-02-24 22:47:25.460220"], ["updated_at", "2015-02-24 22:47:25.460220"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/products" for ::1 at 2015-02-24 17:48:14 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/_product.html.erb (17.8ms)
+  Rendered products/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 466ms (Views: 417.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:48:14 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:48:15 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:48:15 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:48:15 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 17:48:15 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 17:48:15 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 17:48:15 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 17:48:15 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:48:15 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:48:15 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:48:15 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 17:48:15 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 17:48:15 -0500
+
+
+Started GET "/users/new" for ::1 at 2015-02-24 17:48:24 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (634.9ms)
+Completed 200 OK in 788ms (Views: 775.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2015-02-24 17:50:34 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dh8O69CVXrhqnli/Qz+7rc7vAloSR82DQA4U1LFHskO9dTQORAo7/XAeYrgsroDfJqY/48y777+Q0DTORbke6A==", "user"=>{"name"=>"michael", "email"=>"mka@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (17.6ms)[0m  INSERT INTO "users" ("email", "password_digest", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "mka@gmail.com"], ["password_digest", "$2a$10$4Jbddmji1wqqUzRcemcgXet5tOZkLrfNDjmIBPBg5sciVSKQEBkTO"], ["name", "michael"], ["created_at", "2015-02-24 22:50:34.660110"], ["updated_at", "2015-02-24 22:50:34.660110"]]
+  [1m[36m (11.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 172ms (ActiveRecord: 29.8ms)
+
+
+Started GET "/products" for ::1 at 2015-02-24 17:50:34 -0500
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (25.1ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/_product.html.erb (19.0ms)
+  Rendered products/index.html.erb within layouts/application (68.1ms)
+Completed 200 OK in 251ms (Views: 209.3ms | ActiveRecord: 25.5ms)
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:50:35 -0500
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:50:35 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:50:35 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 17:50:35 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:50:35 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 17:50:35 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:50:35 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 17:50:35 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 17:50:35 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:50:35 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 17:50:35 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:50:35 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 17:50:35 -0500
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 17:50:37 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?  [["product_id", 1]]
+  Rendered products/show.html.erb within layouts/application (69.6ms)
+Completed 200 OK in 242ms (Views: 217.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sessions/new" for ::1 at 2015-02-24 17:50:40 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 198ms (Views: 196.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2015-02-24 17:50:48 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vW+YMIjKwK7ZrdFX03nLTutSOE6/+TutZctNbGODXk12BaLVHFWl68Mt61C86PA8AxsF92EFGZG1FW12l33y5g==", "email"=>"mka@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "mka@gmail.com"]]
+Redirected to http://localhost:3000/products
+Completed 302 Found in 103ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for ::1 at 2015-02-24 17:50:48 -0500
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/_product.html.erb (18.0ms)
+  Rendered products/index.html.erb within layouts/application (24.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 172ms (Views: 169.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:50:49 -0500
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:50:49 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:50:49 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 17:50:49 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 17:50:49 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:50:49 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 17:50:49 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:50:49 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:50:49 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:50:49 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 17:50:49 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 17:50:49 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 17:50:49 -0500
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 17:50:50 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?  [["product_id", 1]]
+  Rendered products/show.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 207ms (Views: 174.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/products/1/reviews" for ::1 at 2015-02-24 17:51:02 -0500
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2a8ZATJJLTlDkIvJG8eyikR/PRfwzruZ93PMvdm4fvYSxSPkptZIfFkQsc50Von4rDYAri4ymaUnreynLUbSXQ==", "review"=>{"comment"=>"Fuck you"}, "commit"=>"Create Review", "product_id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "reviews" ("comment", "product_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["comment", "Fuck you"], ["product_id", 1], ["user_id", 1], ["created_at", "2015-02-24 22:51:02.841305"], ["updated_at", "2015-02-24 22:51:02.841305"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 12ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/products" for ::1 at 2015-02-24 17:51:02 -0500
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/_product.html.erb (19.1ms)
+  Rendered products/index.html.erb within layouts/application (24.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 169ms (Views: 167.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reviews-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:51:03 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-24 17:51:03 -0500
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:51:03 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-24 17:51:03 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:51:03 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-24 17:51:03 -0500
+
+
+Started GET "/assets/products-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-24 17:51:03 -0500
+
+
+Started GET "/assets/reviews-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:51:03 -0500
+
+
+Started GET "/assets/products-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:51:03 -0500
+
+
+Started GET "/assets/sessions-34e79a77c847698f70de32962b3f4d98.js?body=1" for ::1 at 2015-02-24 17:51:03 -0500
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-24 17:51:03 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-24 17:51:03 -0500
+
+
+Started GET "/assets/application-859c02e25d4d9f7753223f27162df290.js?body=1" for ::1 at 2015-02-24 17:51:03 -0500
+
+
+Started GET "/products/1" for ::1 at 2015-02-24 17:51:05 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?  [["product_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 137ms (Views: 134.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/1/reviews/1/edit" for ::1 at 2015-02-24 17:51:09 -0500
+Processing by ReviewsController#edit as HTML
+  Parameters: {"product_id"=>"1", "id"=>"1"}
+  [1m[35mProduct Load (8.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 11ms
+
+NoMethodError (undefined method `find' for nil:NilClass):
+  app/controllers/reviews_controller.rb:20:in `edit'
+
+
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (13.5ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (3.1ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (210.8ms)
+
+
+Started GET "/products/1/reviews/1/edit" for ::1 at 2015-02-24 17:51:10 -0500
+Processing by ReviewsController#edit as HTML
+  Parameters: {"product_id"=>"1", "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `find' for nil:NilClass):
+  app/controllers/reviews_controller.rb:20:in `edit'
+
+
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /Users/krys/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (42.4ms)
