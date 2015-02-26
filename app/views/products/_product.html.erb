@@ -1,3 +1,6 @@
-<p><%= link_to product.name, product %>, <%= product.description %> Price: <%= product.formatted_price %> </p>
-
+<p><%= link_to product.name, product_path(product) %>, 
+<%= product.description %> 
+Price: <%= product.formatted_price %> 
+</p>
+<p><%= truncate(product.description, length: 100) %></p>
 

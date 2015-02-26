@@ -2,10 +2,14 @@
 <%= link_to "New Product", new_product_path, id: "new_product", remote: true %>
 
 
-<%= form_tag products_path, method: :get, authentication: false, id: 'search_for' do%>
+<%= form_tag products_path, method: :get, authentication: false, remote: true, id: 'search_for' do%>
 	<%=text_field_tag :search, params[:search] %>
 	<%= submit_tag 'Search' %>
 <% end %>
 
-<%= render @product %>
+<div id="products">
+	<%= render @products %>
+</div>
 
+<!-- outputs several pagination links such as « First ‹ Prev ... 2 3 4 5 6 7 8 9 10 ... Next › Last » -->
+<%= paginate @products %>
