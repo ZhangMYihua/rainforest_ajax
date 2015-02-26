@@ -1,5 +1,6 @@
 <h1>Rainforest</h1>
-<%= link_to "New Product", new_product_path %>
+<%= link_to "New Product", new_product_path, id: "new_product", remote: true %>
+
 
 <%= form_tag products_path, method: :get, authentication: false, id: 'search_for' do%>
 	<%=text_field_tag :search, params[:search] %>
@@ -7,3 +8,4 @@
 <% end %>
 
 <%= render @product %>
+

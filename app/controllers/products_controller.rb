@@ -2,9 +2,13 @@ class ProductsController < ApplicationController
 
 	def index
 		@product = if params[:search]
-			Product.where("LOWER(name) LIKE LOWER(?)", "%#{params[:search]}%")
+			Product.where("LOWER(name) LIKE LOWER(?)", "%#{params[:search]}%").order('products.created_at DESC').page(params[:page])
 		else
-	 		Product.all
+	 		Product.all.order('products.created_at DESC').page(params[:page])
+	 	end
+
+	 	if request.xhr?
+	 		render @product
 	 	end
 	end
 
@@ -17,6 +21,12 @@ class ProductsController < ApplicationController
 
 	def new
 		@product = Product.new
+
+		respond_to do |format|
+			format.html
+			format.js
+		end
+		
 	end
 
 	def edit
@@ -27,7 +37,7 @@ class ProductsController < ApplicationController
 		@product = Product.new(product_params)
 
 		if @product.save
-			redirect_to products_url
+			redirect_to product_url
 		else
 			render :new
 		end
@@ -37,7 +47,7 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
 
     if @product.update_attributes(product_params)
-      redirect_to products_path(@product)
+      redirect_to product_path(@product)
     else
       render :edit
     end
