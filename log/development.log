@@ -13731,3 +13731,505 @@ Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?bo
 
 
 Started GET "/assets/application-4e3f2384e4092fd330977131331b30ae.js?body=1" for ::1 at 2015-06-26 02:37:13 +0800
+
+
+Started GET "/" for ::1 at 2015-06-26 02:49:26 +0800
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.8ms)[0m  SELECT  "products".* FROM "products"  ORDER BY products.created_at DESC LIMIT 12 OFFSET 0
+  Rendered products/_product.html.erb (3.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (86.4ms)
+Completed 200 OK in 282ms (Views: 279.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/application-88aa115c615acf95217bbcd286027cce.css?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/application-4e3f2384e4092fd330977131331b30ae.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/assets/products-c587eb0fbb656617c0a1af0364eb5a4b.js?body=1" for ::1 at 2015-06-26 02:49:26 +0800
+
+
+Started GET "/" for ::1 at 2015-06-26 02:49:58 +0800
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.8ms)[0m  SELECT  "products".* FROM "products"  ORDER BY products.created_at DESC LIMIT 12 OFFSET 0
+  Rendered products/_product.html.erb (3.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (91.8ms)
+Completed 200 OK in 267ms (Views: 265.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/application-88aa115c615acf95217bbcd286027cce.css?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/application-4e3f2384e4092fd330977131331b30ae.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/assets/products-c587eb0fbb656617c0a1af0364eb5a4b.js?body=1" for ::1 at 2015-06-26 02:49:59 +0800
+
+
+Started GET "/" for ::1 at 2015-06-26 02:50:09 +0800
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products"  ORDER BY products.created_at DESC LIMIT 12 OFFSET 0
+  Rendered products/_product.html.erb (3.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (88.3ms)
+Completed 200 OK in 268ms (Views: 265.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application-88aa115c615acf95217bbcd286027cce.css?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/products-c587eb0fbb656617c0a1af0364eb5a4b.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/assets/application-4e3f2384e4092fd330977131331b30ae.js?body=1" for ::1 at 2015-06-26 02:50:09 +0800
+
+
+Started GET "/" for ::1 at 2015-06-26 02:52:31 +0800
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.8ms)[0m  SELECT  "products".* FROM "products"  ORDER BY products.created_at DESC LIMIT 12 OFFSET 0
+  Rendered products/_product.html.erb (2.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (87.8ms)
+Completed 200 OK in 236ms (Views: 233.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/application-88aa115c615acf95217bbcd286027cce.css?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/application-4e3f2384e4092fd330977131331b30ae.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/products-c587eb0fbb656617c0a1af0364eb5a4b.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-06-26 02:52:32 +0800
+
+
+Started GET "/" for ::1 at 2015-06-26 02:52:55 +0800
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.8ms)[0m  SELECT  "products".* FROM "products"  ORDER BY products.created_at DESC LIMIT 12 OFFSET 0
+  Rendered products/_product.html.erb (3.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (89.9ms)
+Completed 200 OK in 239ms (Views: 237.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-06-26 02:52:55 +0800
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-06-26 02:52:55 +0800
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-06-26 02:52:55 +0800
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-06-26 02:52:55 +0800
+
+
+Started GET "/assets/application-88aa115c615acf95217bbcd286027cce.css?body=1" for ::1 at 2015-06-26 02:52:55 +0800
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-06-26 02:52:55 +0800
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-06-26 02:52:55 +0800
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-06-26 02:52:55 +0800
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-06-26 02:52:55 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-06-26 02:52:55 +0800
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-06-26 02:52:55 +0800
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-06-26 02:52:55 +0800
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-06-26 02:52:55 +0800
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-06-26 02:52:56 +0800
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-06-26 02:52:56 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-06-26 02:52:56 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-06-26 02:52:56 +0800
+
+
+Started GET "/assets/application-4e3f2384e4092fd330977131331b30ae.js?body=1" for ::1 at 2015-06-26 02:52:56 +0800
+
+
+Started GET "/assets/products-c587eb0fbb656617c0a1af0364eb5a4b.js?body=1" for ::1 at 2015-06-26 02:52:56 +0800
+
+
+Started GET "/" for ::1 at 2015-06-26 02:53:05 +0800
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (1.0ms)[0m  SELECT  "products".* FROM "products"  ORDER BY products.created_at DESC LIMIT 12 OFFSET 0
+  Rendered products/_product.html.erb (2.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (84.4ms)
+Completed 200 OK in 289ms (Views: 286.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application-88aa115c615acf95217bbcd286027cce.css?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/products-c587eb0fbb656617c0a1af0364eb5a4b.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/assets/application-4e3f2384e4092fd330977131331b30ae.js?body=1" for ::1 at 2015-06-26 02:53:05 +0800
+
+
+Started GET "/" for ::1 at 2015-06-26 02:55:35 +0800
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (1.2ms)[0m  SELECT  "products".* FROM "products"  ORDER BY products.created_at DESC LIMIT 12 OFFSET 0
+  Rendered products/_product.html.erb (4.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (139.6ms)
+Completed 200 OK in 369ms (Views: 366.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application-88aa115c615acf95217bbcd286027cce.css?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/products-c587eb0fbb656617c0a1af0364eb5a4b.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/application-4e3f2384e4092fd330977131331b30ae.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-06-26 02:55:35 +0800
+
+
+Started GET "/?page=2&_=1435258536092" for ::1 at 2015-06-26 02:55:37 +0800
+Processing by ProductsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1435258536092"}
+  [1m[35mProduct Load (1.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY products.created_at DESC LIMIT 12 OFFSET 12
+  Rendered products/_product.html.erb (2.8ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.js.erb (155.2ms)
+Completed 200 OK in 317ms (Views: 313.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/?_=1435258536093&page=3" for ::1 at 2015-06-26 02:55:37 +0800
+Processing by ProductsController#index as JS
+  Parameters: {"_"=>"1435258536093", "page"=>"3"}
+  [1m[35mProduct Load (1.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY products.created_at DESC LIMIT 12 OFFSET 24
+  Rendered products/_product.html.erb (2.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.js.erb (168.7ms)
+Completed 200 OK in 205ms (Views: 201.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/?_=1435258536094&page=4" for ::1 at 2015-06-26 02:55:38 +0800
+Processing by ProductsController#index as JS
+  Parameters: {"_"=>"1435258536094", "page"=>"4"}
+  [1m[35mProduct Load (1.5ms)[0m  SELECT  "products".* FROM "products"  ORDER BY products.created_at DESC LIMIT 12 OFFSET 36
+  Rendered products/_product.html.erb (2.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.js.erb (156.5ms)
+Completed 200 OK in 199ms (Views: 196.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/?_=1435258536095&page=5" for ::1 at 2015-06-26 02:55:38 +0800
+Processing by ProductsController#index as JS
+  Parameters: {"_"=>"1435258536095", "page"=>"5"}
+  [1m[35mProduct Load (2.2ms)[0m  SELECT  "products".* FROM "products"  ORDER BY products.created_at DESC LIMIT 12 OFFSET 48
+  Rendered products/_product.html.erb (2.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.js.erb (148.3ms)
+Completed 200 OK in 181ms (Views: 177.3ms | ActiveRecord: 2.4ms)
