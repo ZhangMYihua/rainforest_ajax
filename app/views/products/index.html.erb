@@ -7,9 +7,10 @@
 	<%= submit_tag 'Search' %>
 <% end %>
 
-<div id="products">
-	<%= render @products %>
+<div class="row">
+  <div id="products" class="col-sm-6">
+    <%= render @products %>
+  </div>
 </div>
-
 <!-- outputs several pagination links such as « First ‹ Prev ... 2 3 4 5 6 7 8 9 10 ... Next › Last » -->
 <%= paginate @products %>
